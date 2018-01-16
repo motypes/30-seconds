@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- v9
+install:
+- npm install
+script:
+- npm run build
+- npm run lint
+cache:
+- node_modules
+sudo: false
