@@ -46,6 +46,12 @@
     "tslint-react": "3.4.0",
     "typescript": "2.6.2"
   },
+  "git-pre-hooks": {
+    "pre-commit": [
+      "npm run lint",
+      "npm run build"
+    ]
+  },
   "jest": {
     "transform": {
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
