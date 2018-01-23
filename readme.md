@@ -23,7 +23,7 @@ npm run dev # run in dev mode
 
 Print the resulting pages in chrome
 
-Sample
+Sample Screenshot
 
-![alt text](https://github.com/epicallan/30-seconds/raw/master/sample/page.png) "Page sample screenshot")
+![alt text](https://github.com/epicallan/30-seconds/raw/master/sample/page.png)
 
