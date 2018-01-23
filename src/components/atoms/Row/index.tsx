@@ -6,11 +6,12 @@ interface Props {
     row: string[][];
 }
 
+
 export default ({row}: Props) =>
-    <Div marginBottom="10px" flexDirection="row">
+    <Div margin="10px" display="flex" flexDirection="row">
         {row.map((card: string[], index: number) => {
             const color = (index % 2) === 0 ? 'blue' : 'yellow';
-            return (<Div key={card.join(',')} flexDirection="row" width="200px">
+            return (<Div key={card.join(',')}>
                         <Card backgroundColor={color} card={card} />
                     </Div>);
             })

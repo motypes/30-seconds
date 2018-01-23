@@ -9,5 +9,5 @@ export type Pages = Row[]; // 3 rows
 // const getCard = (data) => data
 
 // groups of 12 cards
-export const getPagesData = (data: string[][], interval: number = 12): Pages =>
+export const getPagesData = (data: string[][], interval: number = 9): Pages =>
     R.splitEvery(interval, data);

@@ -13,7 +13,7 @@ export default () =>
     <section>
         {
             pages.map((page: RowT[], index) => {
-                const rows = R.splitEvery(4, page);
+                const rows = R.splitEvery(3, page);
                 console.log('groups of 12 for a page: =', rows);
                 return <Page key={createKey(page)} footNote={`30-seconds page-${index}`}>
                             {rows.map(row => <Row key={createKey(row)} row={row} />)}
