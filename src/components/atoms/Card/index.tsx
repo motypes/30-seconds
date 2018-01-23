@@ -1,41 +1,23 @@
 import * as React from 'react';
-import {Div} from 'glamorous';
+import glamorous, {Li} from 'glamorous';
+import {Card} from '../../utils';
 // import data from './data';
 
 interface Props {
-    data: string[][];
-    color: string;
+    card: Card;
+    backgroundColor?: string;
 }
 
-interface Palleteprops {
-    miniWords: string[];
-    color: string;
-}
+const Card = glamorous.ul<{backgroundColor?: string}>({
+    color: 'black'
+}, (props) => ({
+    backgroundColor: props.backgroundColor || 'red'
+}));
 
-const Pallete = (props: Palleteprops) => {
-    const myStyle = {
-        backgroundColor: props.color,
-        display: 'block',
-        height: '200px',
-        width: '150px',
-        filter: 'drop-shadow(0px 0px 5px red)',
-        padding: '0px'
-    };
+export default ({card, backgroundColor}: Props) => {
     return (
-        <div style={myStyle}>
-            {props.miniWords.map( (word) => <li key={word}>{word}</li>)}
-        </div>
-    );
-};
-
-export default (props: Props) => {
-    return (
-        <Div> {
-            props.data.map((arrGrp: string[]) =>
-            <ul  key={arrGrp.join(',')}>
-                {<Pallete miniWords={arrGrp} color={props.color}/>}
-            </ul>)
-        }
-        </Div>
+        <Card backgroundColor={backgroundColor}>
+            {card.map((word: string) => <Li marginBottom="5px" key={word}>{word}</Li>)}
+        </Card>
     );
 };
