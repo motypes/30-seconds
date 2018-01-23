@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Div} from 'glamorous';
-import data from './data';
+// import data from './data';
 
 interface Props {
     data: string[][];
@@ -12,7 +12,6 @@ interface Palleteprops {
     color: string;
 }
 
-console.log('data slice', data[0]);
 const Pallete = (props: Palleteprops) => {
     const myStyle = {
         backgroundColor: props.color,
@@ -33,7 +32,7 @@ export default (props: Props) => {
     return (
         <Div> {
             props.data.map((arrGrp: string[]) =>
-            <ul   key={arrGrp.join(',')}>
+            <ul  key={arrGrp.join(',')}>
                 {<Pallete miniWords={arrGrp} color={props.color}/>}
             </ul>)
         }
