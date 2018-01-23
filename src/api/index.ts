@@ -30,7 +30,7 @@ csv
 
 const flatten = (arr: string[][]) =>
   R.flatten<string>(arr)
-    .filter((word: string) => word && word.length && !word.includes('('));
+    .filter((word: string) => word && word.length);
 
 const randomize = (arr) => {
   arr.forEach((name, index) => {
