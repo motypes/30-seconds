@@ -1,27 +1,23 @@
 import * as React from 'react';
 import {Document, Page, Header, TextBlock, colors} from '@devinit/pdf-base';
+import Card from '../components/Card';
 
 export default () => (
     <Document>
     <Page footNote="Home">
-        <Header title="South South Co-operation PDFS"/>
+        <Header title="30 seconds"/>
         <div style={{marginTop: '2em' }}>
             <TextBlock>
-                <h3> PDF Profiles</h3>
+                <h3> 30 seconds Cards</h3>
             </TextBlock>
         </div>
         <div style={{marginLeft: '2em' }}>
             <TextBlock>
-                <h3><a href="/china" target="_blank" style={{color: colors.red}}>China</a></h3>
-            </TextBlock>
-            <TextBlock>
-                <h3><a href="/india" target="_blank" style={{color: colors.red}}>India</a></h3>
-            </TextBlock>
-            <TextBlock>
-                <h3><a href="/south-africa" target="_blank" style={{color: colors.red}}>South Afica</a></h3>
-            </TextBlock>
-            <TextBlock>
-                <h3><a href="/brazil" target="_blank" style={{color: colors.red}}>Brazil</a></h3>
+               <Card
+                color={colors.red}
+                data={[['alex', 'allan', 'Betty'], ['Bula', 'Dennis', 'Jose'],
+                ['alice', 'peace', 'tom'], ['jon'], ['tom'], ['uuuu']]}
+               />
             </TextBlock>
         </div>
     </Page>

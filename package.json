@@ -7,11 +7,10 @@
   "scripts": {
     "dev": "npm run prebuild && concurrently \"tsc --pretty --watch\" \"next dist\"",
     "prebuild": "rm -rf dist && mkdir -p dist && cp -R node_modules/@devinit/pdf-base/lib/static/ dist/static && cp next.config.js dist && tsc",
-    "pull": "tsc && node dist/pullData/index.js",
+    "api": "tsc && node dist/api/index.js",
     "test": "jest",
     "build": "next build dist",
     "export": "next export dist",
-    "static": "npm run build && npm export",
     "start": "next start dist -p 7777",
     "lint": "tslint -c tslint.json 'pages/**/*.tsx' 'src/**/*.tsx' 'src/**/*.ts'"
   },
@@ -26,6 +25,7 @@
     "glamor": "^2.20.40",
     "glamorous": "^4.11.0",
     "next": "latest",
+    "prettier": "^1.10.2",
     "ramda": "^0.25.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
