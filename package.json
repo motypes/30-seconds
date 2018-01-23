@@ -1,7 +1,7 @@
 {
   "name": "30-seconds",
   "version": "1.0.0",
-  "description": "for creating DI print pdfs",
+  "description": "for creating 30 seconds cards",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -15,7 +15,7 @@
     "lint": "tslint -c tslint.json 'pages/**/*.tsx' 'src/**/*.tsx' 'src/**/*.ts'"
   },
   "keywords": [
-    "pdfs"
+    "pdfs", "30 seconds", "board game"
   ],
   "author": "epicallan.al@gmail.com",
   "license": "ISC",
