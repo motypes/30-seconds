@@ -20,7 +20,7 @@
   "author": "epicallan.al@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "@devinit/pdf-base": "1.0.13",
+    "@devinit/pdf-base": "1.0.15",
     "fast-csv": "2.4.1",
     "glamor": "2.20.40",
     "glamorous": "4.11.4",

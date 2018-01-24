@@ -24,9 +24,9 @@
     tooltip "^1.6.1"
     tooltip.js "^1.1.4"
 
-"@devinit/pdf-base@1.0.13":
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/@devinit/pdf-base/-/pdf-base-1.0.13.tgz#adb46086b9ca586e2a2d00e45dc3921577ef8673"
+"@devinit/pdf-base@1.0.15":
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/@devinit/pdf-base/-/pdf-base-1.0.15.tgz#9528f198dfa21ca2c750c5ba66679506415d495b"
   dependencies:
     "@devinit/charts" "^1.6.46"
     glamor "^2.20.40"
