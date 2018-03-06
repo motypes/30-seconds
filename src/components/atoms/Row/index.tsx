@@ -6,7 +6,6 @@ interface Props {
     row: string[][];
 }
 
-
 export default ({row}: Props) =>
     <Div margin="10px" display="flex" flexDirection="row">
         {row.map((card: string[], index: number) => {
