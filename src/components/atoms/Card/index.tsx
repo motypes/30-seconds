@@ -1,8 +1,6 @@
 import * as React from 'react';
 import glamorous, {Li} from 'glamorous';
-import {Card} from '../../utils';
-// import data from './data';
-
+import {Card} from '../../types';
 interface Props {
     card: Card;
     backgroundColor?: string;
