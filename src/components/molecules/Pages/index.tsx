@@ -10,12 +10,13 @@ const pages: Pages =  R.splitEvery(9, data);
 const createKey = (rows: RowT[]): string => rows.reduce((current, acc) => `${acc}-${current[0][0]}`);
 
 export default () =>
-    <section>
+    <section >
         {
             pages.map((page: RowT[], index) => {
+                const color = (index % 2) === 0 ? '#6161ff' : '#e7f658';
                 const rows = R.splitEvery(3, page);
                 return <Page key={createKey(page)} footNote={`30-seconds page-${index}`}>
-                            {rows.map(row => <Row key={createKey(row)} row={row} />)}
+                            {rows.map(row => <Row key={createKey(row)} color={color} row={row} />)}
                         </Page>;
             })
         }
