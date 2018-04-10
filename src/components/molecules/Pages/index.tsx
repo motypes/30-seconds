@@ -13,7 +13,7 @@ export default () =>
     <section >
         {
             pages.map((page: RowT[], index) => {
-                const color = (index % 2) === 0 ? '#6161ff' : '#e7f658';
+                const color = (index % 2) === 0 ? '#ff1a1a' : '#CCCC00';
                 const rows = R.splitEvery(3, page);
                 return <Page key={createKey(page)} footNote={`30-seconds page-${index}`}>
                             {rows.map(row => <Row key={createKey(row)} color={color} row={row} />)}
