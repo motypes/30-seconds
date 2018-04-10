@@ -1,5 +1,6 @@
 
 [![Build Status](https://travis-ci.org/epicallan/30-seconds.svg?branch=master)](https://travis-ci.org/epicallan/30-seconds)
+[![CircleCI](https://circleci.com/gh/epicallan/30-seconds/tree/master.svg?style=svg)](https://circleci.com/gh/epicallan/30-seconds/tree/master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e501f77141774b74979c60d5cfd219ac)](https://www.codacy.com/app/epicallan/30-seconds?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=devinit/30-seconds&amp;utm_campaign=Badge_Grade)
 [![Dependency Status](https://gemnasium.com/badges/epicallan/30-seconds.svg)](https://gemnasium.com/epicallan/30-seconds)
 
