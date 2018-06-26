@@ -31,7 +31,7 @@
     "react-dom": "16.2.0"
   },
   "devDependencies": {
-    "@types/jest": "22.1.0",
+    "@types/jest": "22.2.3",
     "@types/next": "2.4.7",
     "@types/node": "9.3.0",
     "@types/ramda": "0.25.16",
