@@ -8,7 +8,7 @@
 App for creating 30 seconds cards for print from csv data
 
 Installation and setup
--------
+---------
 
 make sure you have nodejs and npm installed
 
