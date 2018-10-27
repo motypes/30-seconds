@@ -268,9 +268,9 @@
   version "22.1.0"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-22.1.0.tgz#c1de03bbac66fac4cc741f7a69cb73bc01a1707c"
 
-"@types/next@2.4.7":
-  version "2.4.7"
-  resolved "https://registry.yarnpkg.com/@types/next/-/next-2.4.7.tgz#8a8515d7b8007ce7ababa59d5366397b86942469"
+"@types/next@2.4.12":
+  version "2.4.12"
+  resolved "https://registry.yarnpkg.com/@types/next/-/next-2.4.12.tgz#fb85497ca7d5be9a3f603c6642b77dca5de2cb6e"
   dependencies:
     "@types/node" "*"
     "@types/react" "*"
