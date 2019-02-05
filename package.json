@@ -37,7 +37,7 @@
     "@types/ramda": "0.25.16",
     "@types/react": "16.0.35",
     "concurrently": "3.5.1",
-    "git-pre-hooks": "1.2.0",
+    "git-pre-hooks": "1.2.1",
     "jest": "22.1.4",
     "jest-cli": "22.1.4",
     "pretty-format": "22.1.0",
