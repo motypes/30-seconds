@@ -1,0 +1,41 @@
+name: 30-seconds
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  container-job:
+    runs-on: ubuntu-latest
+
+    # runs all of the steps inside the specified container rather than on the VM host.
+    # Because of this the network configuration changes from host based network to a container network.
+    container:
+      image: node:14
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v1
+
+      - name: Restore Cache
+        id: restore-cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Lint
+        run: yarn lint
+
+      - name: Building application
+        run: yarn build
+
+      # - name: Testing application
+      #   run: yarn test
