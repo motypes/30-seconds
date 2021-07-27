@@ -1,17 +1,21 @@
 import * as React from "react";
-import PageRow from "../BackPage/Row";
+import PageRow from "./Row";
 import Layout from "../Layout";
 import { Box } from "@chakra-ui/react";
-
+import { getPages } from "../FrontPage";
+import * as R from "ramda";
+import { CardsWithColors } from "../types";
 
 const BackPage = () => {
-  const color = "#b32626";
-  const rows = [...Array(4)];
+  const singlePage = getPages()[0];
+
+  const rows = R.splitEvery(2, singlePage);
+
   return (
     <Box width="210mm" margin="0 auto">
       <Layout>
-        {rows.map((_row, index)=> (
-          <PageRow key={index} color={color} />
+        {rows.map((row: CardsWithColors, index) => (
+          <PageRow key={index} row={row}  />
         ))}
       </Layout>
     </Box>

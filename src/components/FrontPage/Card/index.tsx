@@ -14,7 +14,7 @@ export default function PageCard({ card, color }: Props) {
       width="100mm"
       height="70mm"
       margin="0px"
-      border="2px grey solid"
+      border="1px gray solid"
       display="flex"
       padding="1mm 0"
       justifyContent="space-around"

@@ -14,7 +14,7 @@ export default function PageCard({ color }: Props) {
       width="100mm"
       height="70mm"
       margin="0px"
-      border="2px grey solid"
+      border="1px grey solid"
       display="flex"
       padding="5mm"
       alignItems="center"
@@ -25,7 +25,7 @@ export default function PageCard({ color }: Props) {
       <HStack spacing="0.5rem">
         <HStack spacing="0.2rem">
           <Icon as={FiPhone} />
-          <Text fontSize="0.75rem">0771849086</Text>
+          <Text fontSize="0.75rem">0771678574</Text>
         </HStack>
         <HStack spacing="0.2rem">
           <Icon as={FiTwitter} />

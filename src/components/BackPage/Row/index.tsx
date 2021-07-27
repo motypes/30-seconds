@@ -1,19 +1,18 @@
 import { Box } from "@chakra-ui/react";
 import * as React from "react";
-import { Row } from "../../types";
+import { CardsWithColors } from "../../types";
 import PageCard from "../Card";
 
 interface Props {
-  color: string;
+  row: CardsWithColors;
 }
 
-export default function PageRow({  color }: Props) {
-  const columns = [...Array(2)];
+export default function PageRow({ row }: Props) {
   return (
     <Box margin="10px" display="flex" flexDirection="row" justifyContent="center">
-      {columns.map((_value, index) => {
+      {row.map(({ card, color }) => {
         return (
-          <Box key={index}>
+          <Box key={card.join(",")}>
             <PageCard color={color} />
           </Box>
         );
