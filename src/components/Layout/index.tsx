@@ -4,7 +4,6 @@ import FootNote from "../FootNote";
 
 export interface Props {
   children: React.ReactChild[] | React.ReactChild;
-  footNote: string;
 }
 
 const PageContainer = ({ children }: { children: React.ReactNode }) => (
@@ -24,9 +23,8 @@ const PageContainer = ({ children }: { children: React.ReactNode }) => (
 export default function Layout(props: Props) {
   return (
     <PageContainer>
-      <Box padding="10mm">
+      <Box padding="0.25mm">
         {props.children}
-        <FootNote text={props.footNote} />
       </Box>
     </PageContainer>
   );

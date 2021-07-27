@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "api": "tsc && node dist/api/index.js",
+    "api": "ts-node src/api/index.ts",
     "test": "jest",
     "dev": "next dev",
     "build": "next build",
@@ -31,7 +31,8 @@
     "prettier": "2.3.2",
     "ramda": "0.27.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -46,6 +47,7 @@
     "jest": "^27.0.6",
     "prettier": "2.3.2",
     "react-test-renderer": "^17.0.2",
+    "ts-node": "^10.1.0",
     "typescript": "4.3.5"
   },
   "git-pre-hooks": {
