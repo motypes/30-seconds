@@ -11,7 +11,7 @@ interface Props {
 export default function PageRow({ row, color }: Props) {
   console.log("row", row);
   return (
-    <Box margin="10px" display="flex" flexDirection="row">
+    <Box margin="10px" display="flex" flexDirection="row" /*boxShadow="0 0 3px 3px #ccc"*/>
       {row.map((card: string[], index: number) => {
         return (
           <Box key={card.join(",")}>
