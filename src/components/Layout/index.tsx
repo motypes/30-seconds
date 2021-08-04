@@ -16,6 +16,8 @@ const PageContainer = ({ children }: { children: React.ReactNode }) => (
     overflow="hidden"
     position="relative"
     marginBottom="10px"
+    marginRight="5px"
+    marginLeft="5px"
   >
     {children}
   </Box>
