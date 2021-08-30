@@ -34,12 +34,8 @@ const theme = extendTheme({
     })
   },
   fonts: {
-    body: "Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif",
-    heading:
-      "Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif"
-  },
-  fontFamily: {
-    poppins: "Poppins"
+    body: "Rancho, sans-serif",
+    heading: "Rancho, sans-serif"
   },
   config: {
     initialColorMode: "dark"
